@@ -1,0 +1,7 @@
+function start(count, message) {
+    for(let i = 0; i < count; i++) {
+        console.log(message)
+    }
+}
+
+module.exports = start;
