@@ -1,9 +1,7 @@
 const startFunc = require('./startFunc');
+const initFunc = require('./init')
 
-// TODO: добавить функцию для инициализации
-console.log('start init function')
+const params = initFunc(process.argv);
+console.log('init params: ', params)
 
-const count = 10;
-const message = 'Hello, hello'
-
-startFunc(count, message);
+startFunc(params.count, params.message);
